@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ELECCIONES2021Model1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="RegistroArchivos">
+    <Key>
+      <PropertyRef Name="IdRegistroUnico" />
+    </Key>
+    <Property Name="IdRegistroUnico" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdEstado" Type="int" />
+    <Property Name="IdNivel" Type="int" />
+    <Property Name="IdPeriodo" Type="int" />
+    <Property Name="IdRegistroMatriz" Type="int" />
+    <Property Name="NombreArchivo" Type="varchar" MaxLength="255" />
+    <Property Name="Archivo" Type="varbinary(max)" />
+    <Property Name="fechacarga" Type="datetime" />
+    <Property Name="IdConcepto" Type="int" />
+  </EntityType>
+  <EntityContainer Name="ELECCIONES2021Model1StoreContainer">
+    <EntitySet Name="RegistroArchivos" EntityType="Self.RegistroArchivos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

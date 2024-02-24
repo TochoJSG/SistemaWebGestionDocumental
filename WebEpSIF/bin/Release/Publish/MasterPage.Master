@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WebEpSIF.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gestión de Documentos</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta name="viewport" content="width-divice-width initial-scale=1 maximus-scale=1,user-scalable=no" />
+
+    <link href="MasterPage.css" rel="stylesheet"/>
+
+    <script type="text/javascript">
+	
+    function mascara(o,f){  
+		v_obj=o;  
+		v_fun=f;  
+		setTimeout("execmascara()",1);  
+	}  
+	function execmascara(){   
+		v_obj.value=v_fun(v_obj.value);
+	}  
+	function cpf(v){     
+		v=v.replace(/([^0-9\.]+)/g,''); 
+		v=v.replace(/^[\.]/,''); 
+		v=v.replace(/[\.][\.]/g,''); 
+		v=v.replace(/\.(\d)(\d)(\d)/g,'.$1$2'); 
+		v=v.replace(/\.(\d{1,2})\./g,'.$1'); 
+		v = v.toString().split('').reverse().join('').replace(/(\d{3})/g,'$1,');    
+		v = v.split('').reverse().join('').replace(/^[\,]/,''); 
+		return v;  
+	}  
+
+        function checkTextAreaMaxLength(textBox,e, length)
+{
+
+        var mLen = textBox["MaxLength"];
+        if(null==mLen)
+            mLen=length;
+
+        var maxLength = parseInt(mLen);
+        if(!checkSpecialKeys(e))
+        {
+         if(textBox.value.length > maxLength-1)
+         {
+            if(window.event)//IE
+              e.returnValue = false;
+            else//Firefox
+                e.preventDefault();
+         }
+    }   
+}
+
+function checkSpecialKeys(e)
+{
+    if(e.keyCode !=8 && e.keyCode!=46 && e.keyCode!=37 && e.keyCode!=38 && e.keyCode!=39 && e.keyCode!=40)
+        return false;
+    else
+        return true;
+}
+
+	
+</script>
+    </head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+
+            <ul class="menu" style="background-color: #3366FF">
+
+                 <li><a href="Default.aspx">Inicio</a>  </li>
+                 <li><a href="WebCapturaDocumentos.aspx">Descarga</a></li>
+                 <li><a href="WebGeneraSolicitud.aspx">Carga</a></li>
+                 <li><a href="WebFormAltaSolPagoEnc.aspx">Indicadores de Avance</a></li>
+                 <li><a href="WebFormAltaSolPagoEnc.aspx">Configuración</a></li>
+                <%-- <li><a href="WebCapturaDocumentos.aspx">Documentos</a></li>
+                 <li><a href="WebFechaVirtual.aspx">Fecha Virtual</a></li>--%>
+                 <%--<li><a href="#">Salir</a></li>--%>
+            </ul>
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>

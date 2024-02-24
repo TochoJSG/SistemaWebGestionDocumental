@@ -1,0 +1,12 @@
+C:\SIFWEBEP\WebEpSIF\ENTIDADES\bin\Release\ENTIDADES.dll
+C:\SIFWEBEP\WebEpSIF\ENTIDADES\bin\Release\ENTIDADES.pdb
+C:\SIFWEBEP\WebEpSIF\ENTIDADES\obj\Release\ENTIDADES.csprojAssemblyReference.cache
+C:\SIFWEBEP\WebEpSIF\ENTIDADES\obj\Release\ENTIDADES.csproj.CoreCompileInputs.cache
+C:\SIFWEBEP\WebEpSIF\ENTIDADES\obj\Release\ENTIDADES.dll
+C:\SIFWEBEP\WebEpSIF\ENTIDADES\obj\Release\ENTIDADES.pdb
+C:\WebEpSIF\ENTIDADES\bin\Release\ENTIDADES.dll
+C:\WebEpSIF\ENTIDADES\bin\Release\ENTIDADES.pdb
+C:\WebEpSIF\ENTIDADES\obj\Release\ENTIDADES.csprojAssemblyReference.cache
+C:\WebEpSIF\ENTIDADES\obj\Release\ENTIDADES.csproj.CoreCompileInputs.cache
+C:\WebEpSIF\ENTIDADES\obj\Release\ENTIDADES.dll
+C:\WebEpSIF\ENTIDADES\obj\Release\ENTIDADES.pdb

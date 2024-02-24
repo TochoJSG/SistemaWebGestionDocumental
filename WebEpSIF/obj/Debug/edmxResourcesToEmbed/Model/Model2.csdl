@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ELECCIONES2021Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="RegistroArchivos">
+    <Key>
+      <PropertyRef Name="IdRegistroUnico" />
+    </Key>
+    <Property Name="IdRegistroUnico" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstado" Type="Int32" />
+    <Property Name="IdNivel" Type="Int32" />
+    <Property Name="IdPeriodo" Type="Int32" />
+    <Property Name="IdRegistroMatriz" Type="Int32" />
+    <Property Name="NombreArchivo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Archivo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="fechacarga" Type="DateTime" Precision="3" />
+    <Property Name="IdConcepto" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="ELECCIONES2021Entities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RegistroArchivos" EntityType="Self.RegistroArchivos" />
+  </EntityContainer>
+</Schema>

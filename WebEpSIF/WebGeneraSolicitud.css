@@ -1,0 +1,75 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+
+
+
+h2 {
+    text-align: center;
+    color: #808080;
+}
+
+.tituloencabezado {
+    font-size: 20px;
+    text-align: center;
+    background-color: #cfc5c5;
+    height: 40px;
+    color: #ffffff;
+}
+
+
+
+
+
+#login .container #login-row #login-column #login-box {
+    margin: 20px 40px;
+    height: 530px;
+    width: 1050px;
+    border: 0px solid #9C9C9C;
+    background-color: #ffffff;
+    padding: 20px;
+    top: 0px;
+    left: 0px;
+}
+
+    #login .container #login-row #login-column #login-box #login-form {
+        padding: 20px;
+        height: 1px;
+    }
+
+
+#documento .container #documento-row #documento-column #documento-box {
+    margin: 20px 330px;
+    height: 700px;
+    width: 1050px;
+    border: 0px solid #9C9C9C;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+    #documento .container #documento-row #documento-column #documento-box #documento-form {
+        padding: 20px;
+        height: 1px;
+    }
+
+
+
+#fecha .container #fecha-row #fecha-column #fecha-box {
+    margin: 40px 300px;
+    height: 250px;
+    width: 250px;
+    border: 0px solid #9C9C9C;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+    #fecha .container #fecha-row #fecha-column #fecha-box #fecha-form {
+        padding: 20px;
+        height: 0px;
+    }
+

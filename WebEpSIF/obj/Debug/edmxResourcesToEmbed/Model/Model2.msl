@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ELECCIONES2021Model1StoreContainer" CdmEntityContainer="ELECCIONES2021Entities3">
+    <EntitySetMapping Name="RegistroArchivos">
+      <EntityTypeMapping TypeName="ELECCIONES2021Model1.RegistroArchivos">
+        <MappingFragment StoreEntitySet="RegistroArchivos">
+          <ScalarProperty Name="IdRegistroUnico" ColumnName="IdRegistroUnico" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="IdNivel" ColumnName="IdNivel" />
+          <ScalarProperty Name="IdPeriodo" ColumnName="IdPeriodo" />
+          <ScalarProperty Name="IdRegistroMatriz" ColumnName="IdRegistroMatriz" />
+          <ScalarProperty Name="NombreArchivo" ColumnName="NombreArchivo" />
+          <ScalarProperty Name="Archivo" ColumnName="Archivo" />
+          <ScalarProperty Name="fechacarga" ColumnName="fechacarga" />
+          <ScalarProperty Name="IdConcepto" ColumnName="IdConcepto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
